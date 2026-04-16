@@ -4,13 +4,15 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AddPhotoEntry from './Components/AddPhotoEntry';
 import ViewAllPhotos from './Components/ViewAllPhotos';
 import PhotoNavbar from './Components/PhotoNavbar';
+import Login from './Components/Login';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element= {<AddPhotoEntry />}/>
+      <Route path="/Add" element= {<AddPhotoEntry />}/>
       <Route path="/ViewAll" element= {<ViewAllPhotos />}/>
+      <Route path="/" element= {<Login />}/>
     </Routes>
     </BrowserRouter>
   );
